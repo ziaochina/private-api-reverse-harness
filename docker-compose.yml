@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  reverse-harness:
+    build: .
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
